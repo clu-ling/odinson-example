@@ -1,0 +1,12 @@
+rules:
+  # - name: example
+  #   label: GrammaticalSubject
+  #   type: event
+  #   pattern: |
+  #     trigger = [tag=/VB.*/]
+  #     subject = >dobj
+
+  - name: example
+    label: GrammaticalSubject
+    type: basic
+    pattern: (?<subject> [tag=/(NN|JJ).*/]* [incoming=nsubj] [tag=/(NN|JJ).*/]*)
