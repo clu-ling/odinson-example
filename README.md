@@ -58,7 +58,6 @@ For most nontrivial applications, we'll want to use a _grammar_ (i.e., a set of 
 We'll be using Python to make our `POST` request.  First we need to build our Docker image:
 
 ```bash
-cd python
 docker build -f python/Dockerfile -t "parsertongue/odinson-example:python" python/
 ```
 
